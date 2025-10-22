@@ -51,8 +51,8 @@ export default function Models() {
                                     <td>
                                         {item.category.length}
                                     </td>
-                                    <td>
-                                        <Link href={item.category}>Ver naves</Link>
+                                    <td className="hover:bg-gray-500" >
+                                        <Link className="w-full h-full block hover:text-white" href={`/models/${item.category}`}>Ver {item.category}</Link>
                                     </td>
                                 </tr>
                             ))
