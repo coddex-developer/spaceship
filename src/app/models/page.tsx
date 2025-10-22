@@ -30,7 +30,7 @@ export default function Models() {
     return (
         <>
             <div className="w-full px-6 flex flex-col justify-center items-center h-dvh gap-4">
-                <h1 className="text-center font-bold bg-gray py-3.5 text-3xl">Navegue por categoria</h1>
+                <h1 className="text-center font-bold bg-gray py-3.5 text-[19pt]">Navegue por categoria</h1>
                 <table className="w-full lg:max-w-[600px]">
                     <thead>
                         <tr>
