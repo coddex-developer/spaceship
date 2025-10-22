@@ -1,0 +1,66 @@
+"use client"
+import { data } from "@/db/db"
+import { spaceShipModel } from "@/db/spaceshipsType"
+import Link from "next/link"
+import { useMemo } from "react"
+import "./style.min.scss";
+
+export default function Models() {
+
+    type Accum = {
+        [key: string]: {
+            category: string,
+            itens: spaceShipModel[]
+        }
+    }
+    const categoryItems = useMemo(() => {
+        return data.reduce((accum: Accum, item) => {
+            const category = item.category;
+            if (!accum[category]) {
+                accum[category] = {
+                    category: category,
+                    itens: []
+                }
+            }
+            accum[category].itens.push(item);
+            return accum;
+        }, {})
+    }, [data])
+
+    const allCategory = Object.values(categoryItems)
+    return (
+        <>
+            <div className="w-full px-6 flex flex-col justify-center gap-4">
+                <h1 className="font-bold bg-gray">Navegue por categoria</h1>
+                <table className="w-full lg:max-w-[600px] lg:mx-auto">
+                    <thead>
+                        <tr>
+                            <th>Categoria</th>
+                            <th>Quantidade</th>
+                            <th>Visualizar</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                        {
+                            allCategory.map(item => (
+                                <tr key={item.category}>
+                                    <td >
+                                        {item.category}
+                                    </td>
+                                    <td>
+                                        {item.category.length}
+                                    </td>
+                                    <td>
+                                        <Link href={item.category}>Ver naves</Link>
+                                    </td>
+                                </tr>
+                            ))
+                        }
+
+                    </tbody>
+                </table>
+            </div>
+        </>
+    )
+}
