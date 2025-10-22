@@ -17,7 +17,7 @@ export default function Home() {
             <li>Estilização a parte.</li>
           </ul>
         </div>
-        <Link href="/models" className="w-sm md:w-md lg:w-lg bg-blue-600 p-2 rounded-md text-white pointer hover:bg-blue-500 hover:shadow-2xl hover:shadow-blue-500 hover:scale-105 transition-all">Começar</Link>
+        <Link href="/models" className="w-full sm:w-sm md:w-md lg:w-lg bg-blue-600 p-2 rounded-md text-white pointer hover:bg-blue-500 hover:shadow-2xl hover:shadow-blue-500 hover:scale-105 transition-all">Começar</Link>
       </div>
     </>
   );
