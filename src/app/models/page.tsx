@@ -35,9 +35,9 @@ export default function Models() {
                 <table className="w-full lg:max-w-[600px] lg:mx-auto">
                     <thead>
                         <tr>
-                            <th>Categoria</th>
-                            <th>Quantidade</th>
-                            <th>Visualizar</th>
+                            <th className="dark:bg-gray-800">Categoria</th>
+                            <th className="dark:bg-gray-800">Quantidade</th>
+                            <th className="dark:bg-gray-800">Visualizar</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -45,13 +45,13 @@ export default function Models() {
                         {
                             allCategory.map(item => (
                                 <tr key={item.category}>
-                                    <td >
+                                    <td className="dark:bg-gray-600">
                                         {item.category}
                                     </td>
-                                    <td>
+                                    <td className="dark:bg-gray-600">
                                         {item.category.length}
                                     </td>
-                                    <td className="hover:bg-gray-500" >
+                                    <td className="hover:bg-gray-500 dark:bg-gray-600" >
                                         <Link className="w-full h-full block hover:text-white" href={`/models/${item.category}`}>Ver {item.category}</Link>
                                     </td>
                                 </tr>
