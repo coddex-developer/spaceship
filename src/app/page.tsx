@@ -8,7 +8,7 @@ export default function Home() {
         <div>
           <p className="text-[10pt] outline rounded-md p-0.5 lg:p-1.5">Esta página foi desenvolvida utilizando NextJs afins de trinamento do curso da OneBitCode</p>
           <h2 className="font-semibold text-base py-2">Detalhes do desafio:</h2>
-          <ul className="text-left bg-blue-200 rounded-md px-8 list-disc py-1">
+          <ul className="text-left bg-blue-200 dark:bg-gray-800 rounded-md px-8 list-disc py-1">
             <li>Criar uma página com rotas dinâmicas.</li>
             <li>Navegar entre itens capturando o id das espaçonaves.</li>
             <li>Filtragem de categorias em rota separada.</li>
@@ -17,7 +17,7 @@ export default function Home() {
             <li>Estilização a parte.</li>
           </ul>
         </div>
-        <Link href="/models" className="w-sm bg-blue-600 p-2 rounded-md text-white pointer hover:bg-blue-500 hover:shadow-2xl hover:shadow-blue-500 hover:scale-105 transition-all">Começar</Link>
+        <Link href="/models" className="w-sm md:w-md lg:w-lg bg-blue-600 p-2 rounded-md text-white pointer hover:bg-blue-500 hover:shadow-2xl hover:shadow-blue-500 hover:scale-105 transition-all">Começar</Link>
       </div>
     </>
   );

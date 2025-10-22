@@ -44,13 +44,13 @@ export default function Models() {
                         {
                             allCategory.map(item => (
                                 <tr key={item.category}>
-                                    <td className="dark:bg-blue-600 bg-blue-100">
+                                    <td className="dark:bg-gray-700 bg-blue-100">
                                         {item.category}
                                     </td>
-                                    <td className="dark:bg-blue-600 bg-blue-100">
+                                    <td className="dark:bg-gray-700 bg-blue-100">
                                         {item.itens.length}
                                     </td>
-                                    <td className="hover:bg-blue-500 dark:bg-blue-200 bg-blue-100" >
+                                    <td className="hover:bg-blue-500 dark:bg-gray-700 bg-blue-100" >
                                         <Link className="w-full h-full block hover:text-white" href={`/models/${item.category}`}>Ver {item.category}</Link>
                                     </td>
                                 </tr>
