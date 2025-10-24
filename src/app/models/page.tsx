@@ -4,7 +4,7 @@ import Link from "next/link"
 import { useMemo } from "react"
 import "./style.min.scss";
 
-export default function Models() {
+export default async function Models() {
 
     type Accum = {
         [key: string]: {
@@ -25,7 +25,7 @@ export default function Models() {
             return accum;
         }, {})
     }, [data])
-
+await new Promise((resolve) => setTimeout(resolve, 2000))
     const allCategory = Object.values(categoryItems)
     return (
         <>
