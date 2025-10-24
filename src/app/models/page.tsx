@@ -5,7 +5,6 @@ import { useMemo } from "react"
 import "./style.min.scss";
 
 export default async function Models() {
-
     type Accum = {
         [key: string]: {
             category: string,
@@ -25,7 +24,8 @@ export default async function Models() {
             return accum;
         }, {})
     }, [data])
-await new Promise((resolve) => setTimeout(resolve, 2000))
+
+    await new Promise((resolve) => setTimeout(resolve, 2000))
     const allCategory = Object.values(categoryItems)
     return (
         <>

@@ -24,17 +24,17 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="pt-BR">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased bg-blue-50 dark:bg-gray-950 text-gray-900 dark:text-gray-50`}
-      >
-        <nav className="flex justify-between px-10 py-3">
-          <h1 className="p-2 bg-blue-950 rounded-full font-bold text-gray-50">CoddeX Spaceships</h1>
-          <div className="flex gap-2">
-            <Link className="border-b-1 hover:bg-blue-500 hover:text-white px-1 rounded-sm items-center flex" href={`/`}>Home</Link>
-            <Link className="border-b-1 hover:bg-blue-500 hover:text-white px-1 rounded-sm items-center flex" href={`/models`}>Models</Link>
-          </div>
-        </nav>
-        {children}
+      <body>
+        <div className={`${geistSans.variable} ${geistMono.variable} antialiased bg-blue-50 dark:bg-gray-950 text-gray-900 dark:text-gray-50`}>
+          <nav className="flex justify-between px-10 py-3">
+            <h1 className="p-2 bg-blue-950 rounded-full font-bold text-gray-50">CoddeX Spaceships</h1>
+            <div className="flex gap-2">
+              <Link className="border-b-1 hover:bg-blue-500 hover:text-white px-1 rounded-sm items-center flex" href={`/`}>Home</Link>
+              <Link className="border-b-1 hover:bg-blue-500 hover:text-white px-1 rounded-sm items-center flex" href={`/models`}>Models</Link>
+            </div>
+          </nav>
+          {children}
+        </div>
       </body>
     </html>
   );
