@@ -25,7 +25,7 @@ export default function RootLayout({
   return (
     <html lang="pt-BR">
       <body>
-        <div className={`${geistSans.variable} ${geistMono.variable} antialiased bg-blue-50 dark:bg-gray-950 text-gray-900 dark:text-gray-50`}>
+        <div className={`${geistSans.variable} ${geistMono.variable} antialiased bg-blue-50 dark:bg-gray-950 text-gray-900 dark:text-gray-50 h-dvh`}>
           <nav className="flex justify-between px-10 py-3">
             <h1 className="p-2 bg-blue-950 rounded-full font-bold text-gray-50">CoddeX Spaceships</h1>
             <div className="flex gap-2">
@@ -35,6 +35,9 @@ export default function RootLayout({
           </nav>
           {children}
         </div>
+        <footer className="py-3 bg-blue-950 text-center text-[10pt] text-white">
+          CoddeX Developer {`${new Date().getFullYear()}`}
+        </footer>
       </body>
     </html>
   );

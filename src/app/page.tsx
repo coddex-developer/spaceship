@@ -4,10 +4,10 @@ export default function Home() {
 
   return (
     <>
-      <div className="w-full px-10 text-center gap-12 flex h-dvh justify-center items-center flex-col lg:w-[600px] lg:mx-auto">
+      <div className="w-full px-10 text-center gap-12 flex justify-center items-center flex-col lg:w-[600px] lg:mx-auto">
         <h1 className="font-bold text-[19pt] text-shadow-black text-shadow-2xs py-2.5">Seja bem vindo a nossa lista de Espaçonaves</h1>
         <div>
-          <p className="text-[10pt] outline rounded-md p-0.5 lg:p-1.5">Esta página foi desenvolvida utilizando NextJs afins de trinamento do curso da OneBitCode</p>
+          <p className="text-[10pt] outline rounded-md p-0.5 lg:p-1.5">Esta página foi desenvolvida utilizando NextJs afins de praticar o exercício do curso OneBitCode.</p>
           <h2 className="font-semibold text-base py-2">Detalhes do desafio:</h2>
           <ul className="text-left bg-blue-200 dark:bg-gray-800 rounded-md px-8 list-disc py-1">
             <li>Criar uma página com rotas dinâmicas.</li>
