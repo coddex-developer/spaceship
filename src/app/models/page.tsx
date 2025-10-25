@@ -1,10 +1,11 @@
+"use client"
 import { data } from "@/db/db"
 import { spaceShipModel } from "@/db/spaceshipsType"
 import Link from "next/link"
 import { useMemo } from "react"
 import "./style.min.scss";
 
-export default async function Models() {
+export default function Models() {
     type Accum = {
         [key: string]: {
             category: string,
@@ -25,7 +26,6 @@ export default async function Models() {
         }, {})
     }, [data])
 
-    await new Promise((resolve) => setTimeout(resolve, 2000))
     const allCategory = Object.values(categoryItems)
     return (
         <>
