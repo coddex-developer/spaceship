@@ -44,7 +44,7 @@ export default function Models() {
             {
                 loading ? (
                     <div className="flex justify-center w-full lg:max-w-[600px] h-dvh">
-                        <p className="text-xl font-semibold animate-pulse mt-48 text-gray-700 dark:text-gray-300">
+                        <p className="text-xl text-center font-semibold animate-pulse mt-48 text-gray-700 dark:text-gray-300">
                             Carregando categorias...
                         </p>
                     </div>
@@ -71,7 +71,7 @@ export default function Models() {
                                                 {item.itens.length}
                                             </td>
                                             <td className="hover:bg-blue-500 dark:bg-gray-700 bg-blue-100" >
-                                                <Link className="w-full h-full block hover:text-white" href={`/models/${item.category}`}>Ver {item.category}</Link>
+                                                <Link className="w-full h-full block hover:text-white" href={`/models/spaceship/${item.category}`}>Ver {item.category}</Link>
                                             </td>
                                         </tr>
                                     ))
