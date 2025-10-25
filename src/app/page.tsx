@@ -1,24 +1,28 @@
 "use client"
+import { TableChartOutlined } from "@mui/icons-material";
+import { Alert, Button, Container, Fab, List, ListItem } from "@mui/material";
 import Link from "next/link";
 export default function Home() {
 
   return (
     <>
-      <div className="w-full px-10 text-center gap-12 flex justify-center items-center flex-col lg:w-[600px] lg:mx-auto">
+      <div className="w-full px-8 text-center gap-12 flex justify-center items-center flex-col lg:w-[600px] lg:mx-auto">
         <h1 className="font-bold text-[19pt] text-shadow-black text-shadow-2xs py-2.5">Seja bem vindo a nossa lista de Espaçonaves</h1>
         <div>
           <p className="text-[10pt] outline rounded-md p-0.5 lg:p-1.5">Esta página foi desenvolvida utilizando NextJs afins de praticar o exercício do curso OneBitCode.</p>
           <h2 className="font-semibold text-base py-2">Detalhes do desafio:</h2>
-          <ul className="text-left bg-blue-200 dark:bg-gray-800 rounded-md px-8 list-disc py-1">
-            <li>Criar uma página com rotas dinâmicas.</li>
-            <li>Navegar entre itens capturando o id das espaçonaves.</li>
-            <li>Filtragem de categorias em rota separada.</li>
-            <li>Filtrar espaçonaves de acordo com sua categoria e quantidade.</li>
-            <li>Desabilitar botão de navegação entre o primeiro e o ultimo item.</li>
-            <li>Estilização a parte.</li>
-          </ul>
+          <List className="flex flex-col bg-gray-200 gap-1 dark:bg-gray-800 rounded-md py-4">
+            <ListItem>Criar uma página com rotas dinâmicas.</ListItem>
+            <ListItem>Navegar entre itens capturando o id das espaçonaves.</ListItem>
+            <ListItem>Filtragem de categorias em rota separada.</ListItem>
+            <ListItem>Filtrar espaçonaves de acordo com sua categoria e quantidade.</ListItem>
+            <ListItem>Desabilitar botão de navegação entre o primeiro e o ultimo item.</ListItem>
+            <ListItem>Estilização a parte.</ListItem>
+          </List>
         </div>
-        <Link href="/models" className="w-full sm:w-sm md:w-md lg:w-lg bg-blue-600 p-2 rounded-md text-white pointer hover:bg-blue-500 hover:shadow-2xl hover:shadow-blue-500 hover:scale-105 transition-all">Começar</Link>
+        <Link className="mb-16" href="/models">
+          <Button variant="contained">Iniciar</Button>
+        </Link>
       </div>
     </>
   );
