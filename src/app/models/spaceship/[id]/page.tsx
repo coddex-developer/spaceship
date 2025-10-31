@@ -1,5 +1,6 @@
 "use client"
 import { data } from "@/db/db";
+import { DangerousRounded } from "@mui/icons-material";
 import { Button } from "@mui/material";
 import Image from "next/image";
 import Link from "next/link";
@@ -13,7 +14,7 @@ export default function Page() {
     const currentIndex = useMemo(() => data.findIndex(spaceship => spaceship.id === Number(id)), [id]);
 
     if (currentIndex === -1) {
-        return <p className="text-center bg-red-900 text-white w-md mx-auto py-3 rounded mt-50">Nenhuma espaçonave encontrada! <Link className="me-4 border-b-2" href={"/models/spaceship/1"}>Voltar</Link></p>;
+        return <p className="text-center gap-6 bg-gray-900 justify-center text-white w-xs mx-auto py-3 rounded mt-40 flex flex-col items-center"><DangerousRounded className="!text-6xl"/> Nenhuma espaçonave encontrada! <Link href={"/models/spaceship/1"}><Button variant="contained">Voltar</Button></Link></p>;
     }
 
     const ship = data[currentIndex];

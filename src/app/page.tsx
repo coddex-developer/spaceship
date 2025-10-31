@@ -25,6 +25,7 @@ export default function Home() {
             <ListItem className="!py-1.5 !px-2">✅ Filtragem de categorias em rota separada.</ListItem>
             <ListItem className="!py-1.5 !px-2">✅ Filtrar espaçonaves de acordo com sua categoria e quantidade.</ListItem>
             <ListItem className="!py-1.5 !px-2">✅ Desabilitar botão de navegação entre o primeiro e o último item.</ListItem>
+            <ListItem className="!py-1.5 !px-2">✅ Loader de carregamento.</ListItem>
             <ListItem className="!py-1.5 !px-2">✅ Estilização própria e responsiva.</ListItem>
           </List>
         </div>
