@@ -33,7 +33,7 @@ export default function Models() {
 
         const time = setTimeout(() => {
             setLoading(false)
-        }, 1500)
+        }, 1000)
 
         return () => clearTimeout(time)
     }, [])
@@ -51,7 +51,7 @@ export default function Models() {
                     </div>
                 ) : (
                     <div className="w-full px-6  justify-center gap-4">
-                        <h1 className="text-center font-bold bg-gray py-3.5 text-[19pt]">Navegue por categoria</h1>
+                        <h1 className="text-center font-bold bg-gray py-3.5 text-[19pt]">Tabela de categorias</h1>
                         <TableContainer component={Paper}>
                             <Table sx={{ minWidth: 300 }} aria-label="simple table">
                                 <TableHead>
@@ -67,7 +67,6 @@ export default function Models() {
                                             key={row.category}
                                             sx={{ '&:last-child td, &:last-child th': { border: 0 } }}
                                         >
-                                            
                                             <TableCell align="left">{row.category}</TableCell>
                                             <TableCell align="center">{row.itens.length}</TableCell>
                                         </TableRow>

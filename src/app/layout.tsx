@@ -30,7 +30,8 @@ export default function RootLayout({
             <h1 className="p-2 bg-blue-950 rounded-full font-bold text-gray-50">CoddeX Spaceships</h1>
             <div className="flex gap-2">
               <Link className="border-b hover:bg-blue-500 hover:text-white px-1 rounded-sm items-center flex" href={`/`}>Home</Link>
-              <Link className="border-b hover:bg-blue-500 hover:text-white px-1 rounded-sm items-center flex" href={`/models`}>Models</Link>
+              <Link className="border-b hover:bg-blue-500 hover:text-white px-1 rounded-sm items-center flex" href={`/models`}>Table</Link>
+              <Link className="border-b hover:bg-blue-500 hover:text-white px-1 rounded-sm items-center flex" href={`/models/spaceship/1`}>Spaceships</Link>
             </div>
           </nav>
           {children}
