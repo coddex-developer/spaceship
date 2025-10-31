@@ -27,7 +27,7 @@ export default function Page() {
     return (
         <div className="flex flex-col gap-3 lg:justify-between lg:flex-row items-center px-10">
             <div>
-                <h1 className="font-bold py-5 text-4xl text-center lg:text-left">{ship.name}</h1>
+                <h1 className="font-bold text-shadow-lg shadow-gray-800 text-gray-700 dark:text-gray-400 py-5 text-4xl text-center lg:text-left">{ship.name}</h1>
                 <Image className="rounded-lg mb-4 max-h-screen" src={ship.imageUrl} height={200} width={400} alt={ship.name} />
             </div>
             <div>
@@ -37,8 +37,8 @@ export default function Page() {
                 </div>
                 <p className="sm:text-center text-center py-6 text-sm lg:max-w-3xl">{ship.description}</p>
                 <div className="flex gap-4 mt-4 mb-10 justify-center items-center">
-                    <Button variant="outlined" onClick={() => goToIndex(Math.max(currentIndex - 1, 0))} disabled={currentIndex === 0}>Prev</Button>
-                    <Button variant="outlined" onClick={() => goToIndex(Math.min(currentIndex + 1, data.length - 1))} disabled={currentIndex === data.length - 1}>Next</Button>
+                    <Button className="!rounded-full" variant="outlined" onClick={() => goToIndex(Math.max(currentIndex - 1, 0))} disabled={currentIndex === 0}>Prev</Button>
+                    <Button className="!rounded-full" variant="outlined" onClick={() => goToIndex(Math.min(currentIndex + 1, data.length - 1))} disabled={currentIndex === data.length - 1}>Next</Button>
                 </div>
             </div>
         </div>

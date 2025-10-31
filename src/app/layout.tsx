@@ -75,7 +75,7 @@ export default function RootLayout({
         {/* MENU MOBILE */}
         {menuOpen && (
           <div
-            className="sm:hidden flex flex-col items-center gap-3 bg-white/90 dark:bg-gray-900/90 border-b border-blue-100 dark:border-gray-800 py-4 animate-fade-in-down"
+            className="sm:hidden flex top-17 z-50 w-full fixed flex-col items-center gap-3 bg-white/90 dark:bg-gray-900/90 border-b border-blue-100 dark:border-gray-800 py-4 animate-fade-in-down"
           >
             <Link
               href="/"
