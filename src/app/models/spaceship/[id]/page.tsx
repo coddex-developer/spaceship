@@ -14,7 +14,7 @@ export default function Page() {
     const currentIndex = useMemo(() => data.findIndex(spaceship => spaceship.id === Number(id)), [id]);
 
     if (currentIndex === -1) {
-        return <p className="text-center gap-6 bg-gray-900 justify-center text-white w-xs mx-auto py-3 rounded mt-40 flex flex-col items-center"><DangerousRounded className="!text-6xl"/> Nenhuma espaçonave encontrada! <Link href={"/models/spaceship/1"}><Button variant="contained">Voltar</Button></Link></p>;
+        return <div className="text-center gap-4 bg-gray-900 justify-center text-white w-xs mx-auto py-3 rounded mt-30 flex flex-col items-center p-2"><DangerousRounded className="!text-6xl"/><span className="text-bold text-[18pt]">ERRO 401</span> <p>Nenhuma espaçonave encontrada com este id!</p> <Link href={"/models/spaceship/1"}><Button variant="contained">Voltar</Button></Link></div>;
     }
 
     const ship = data[currentIndex];
