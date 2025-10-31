@@ -72,13 +72,13 @@ export default function Models() {
                 <TableRow className="bg-gradient-to-r from-blue-600 to-indigo-700">
                   <TableCell
                     align="center"
-                    className="text-white font-bold text-lg"
+                    className="!text-white !font-bold !text-lg"
                   >
                     Nome da Categoria
                   </TableCell>
                   <TableCell
                     align="center"
-                    className="text-white font-bold text-lg"
+                    className="!text-white !font-bold !text-lg"
                   >
                     Quantidade
                   </TableCell>
@@ -88,22 +88,22 @@ export default function Models() {
                 {allCategory.map((row, index) => (
                   <TableRow
                     key={row.category}
-                    className={`transition-all duration-200 hover:bg-blue-50 dark:hover:bg-gray-700 ${
+                    className={`transition-all duration-200 hover:bg-blue-50 dark:hover:bg-gray-500 ${
                       index % 2 === 0
-                        ? "bg-gray-50 dark:bg-gray-900"
-                        : "bg-white dark:bg-gray-800"
+                        ? "bg-gray-50 dark:bg-gray-800"
+                        : "bg-white dark:bg-gray-700"
                     }`}
                     sx={{ "&:last-child td, &:last-child th": { border: 0 } }}
                   >
                     <TableCell
                       align="left"
-                      className="text-gray-800 dark:text-gray-100 font-medium py-3 text-[15px]"
+                      className="text-gray-800 dark:!text-gray-50 font-medium py-3 text-[15px]"
                     >
                       {row.category}
                     </TableCell>
                     <TableCell
                       align="center"
-                      className="text-gray-800 dark:text-gray-100 font-semibold py-3 text-[15px]"
+                      className="text-gray-800 dark:!text-gray-50 font-semibold py-3 text-[15px]"
                     >
                       {row.itens.length}
                     </TableCell>
