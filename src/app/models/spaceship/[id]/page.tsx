@@ -25,7 +25,7 @@ export default function Page() {
     }
 
     return (
-        <div className="flex flex-col lg:justify-between lg:flex-row items-center px-10">
+        <div className="flex flex-col gap-3 lg:justify-between lg:flex-row items-center px-10">
             <div>
                 <h1 className="font-bold py-5 text-4xl text-center lg:text-left">{ship.name}</h1>
                 <Image className="rounded-lg mb-4 max-h-screen" src={ship.imageUrl} height={200} width={400} alt={ship.name} />
